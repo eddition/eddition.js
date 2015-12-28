@@ -36,11 +36,11 @@
             }
         },
         greeting: function(){
-            return greetings[this.language] + this.firstName + '!';
+            return greetings[this.language] + " " + this.firstName + '!';
         },
         
         formalGreeting: function(){
-            return formalGreetings[this.language] + this.fullName();
+            return formalGreetings[this.language] + " " + this.fullName();
         },
         greet: function(formal){
             var msg;
@@ -129,7 +129,7 @@
         },
 
         mergeUnique: function(arr1, arr2){
-            
+
             if (Array.isArray(arr1) && Array.isArray(arr2)){
                 var a = arr1.concat(arr2);
                 
@@ -155,7 +155,7 @@
     };
     
     Eddition.init = function (firstParam, secondParam, thirdParam) {
-        if(typeof firstName === 'string' && typeof lastName === 'string'){
+        if(typeof firstParam === 'string' && typeof secondParam === 'string'){
             var self = this;
             self.firstName = firstParam || '';
             self.lastName = secondParam || '';
