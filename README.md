@@ -1,2 +1,2 @@
 # eddition.js
-javascript library 
+Eddition.JS
