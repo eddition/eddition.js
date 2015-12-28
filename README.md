@@ -1,0 +1,2 @@
+# eddition.js
+javascript library 
